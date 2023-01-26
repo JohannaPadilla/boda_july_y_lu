@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --color-principal: black;
+  --color-secundario: #c4f9ff;
+  --color-terciario: #6e8fd8;
+  --font-principal: "Nunito Sans", sans-serif;
+  --font-secundaria: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: var(--color-principal);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+body p {
+  font-family: var(--font-secundaria);
+  padding: 0;
+}
+body h2 {
+  font-family: var(--font-principal);
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .boxuno {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(./img/tabletback1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.inicio {
+  text-align: center;
+  padding: 40px 0 40px 0;
+  animation-name: texto;
+  animation-duration: 5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@keyframes texto {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.inicio img {
+  width: 80vw;
+  max-width: 500px;
+  padding: 0;
+}
+.inicio {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+.boton {
+  border: 1px solid var(--color-terciario);
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-top: 300px;
+  font-weight: bold;
+}
+.boton:hover {
+  color: var(--color-principal);
+  background-color: var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.lovestory-text .audiodiv {
+  padding: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--color-terciario);
+  font-family: var(--font-principal);
+  font-size: 80px !important;
+  padding: 0;
+  margin: 0;
+}
+
+header p {
+  color: var(--color-terciario);
+  font-family: var(--font-secundaria);
+}
+
+.countdown {
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 22px;
+}
+.countdown p {
+  margin: 0;
+}
+
+/* IMAGEN UNO*/
+
+.lovestory {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.lovestory-text {
+  padding: 20px 40px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.lovestory-text_1 {
+  padding: 20px 40px;
+  text-align: justify;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.lovestory-img {
+  width: 100%;
+  background-image: url(img/5.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.borde{
+    border-bottom: 5px dashed var(--color-secundario);
+}
+.galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.galeria img {
+  width: 25vw;
+}
+.info {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  background-image: url(./img/imagen\ final_3.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.info .datos {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.info p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.animado {
+  width: 340px;
+
+  padding: 40px;
+  border-radius: 25px;
+}
+
+.info h2 {
+  color: #000000;
+  font-size: 58px;
+  padding: 10px;
+}
+
+.info .icono {
+  width: 50px;
+  margin-bottom: 15px;
+}
+.info-cards {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.info-cards h2 {
+  font-size: 40px;
+  color: var(--color-terciario);
+}
+
+.rsvp {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color-principal);
+  background-image: url(./img/imagen\ final5.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.rsvp-text .icono {
+  width: 70px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.rsvp-card {
+  width: 100%;
+  height: 35vh;
+  padding: 70px;
+  margin: auto;
+  max-width: 520px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.rsvp-text {
+  max-width: 280px;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+.rsvp-card h2 {
+  color: var(--color-terciario);
+  padding: 0;
+  font-size: 40px;
+}
+.rsvp-card p {
+  color: var(--color-terciario);
+  padding: 0px 8px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.dresscode {
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.dresscode h2 {
+  font-size: 2em;
+}
+.dresscode p {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+.regalos {
+  width: 100%;
+  height: 70vh;
+  background-color: var(--color-principal);
+  background-image: url(./img/imagen\ final_1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.regalos .icono {
+  width: 50px;
+}
+.regalos-card {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  margin: auto;
+  max-width: 520px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.regalos-card h2 {
+  color: var(--color-terciario);
+  padding: 0;
+  font-size: 40px;
+}
+.regalos-card p {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+#contenedor {
+  width: auto;
+  height: 60px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contenedor > div {
+  display: flex;
+}
+
+span#enlace {
+  background-color: var(--color-terciario);
+  font-size: 1em;
+  padding: 8px;
+  text-align: center;
+  color: var(--color-principal);
+
+  border: 1px solid var(--color-terciario);
+  margin-top: 10px;
+}
+
+button#copiador {
+  background-color: var(--color-terciario);
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 1em;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid var(--color-terciario);
+  margin-top: 10px;
+}
+#contenedor2 {
+  width: auto;
+  height: 60px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contenedor2 > div {
+  display: flex;
+}
+
+span#enlace2 {
+  background-color: var(--color-terciario);
+  font-size: 1em;
+  padding: 8px;
+  text-align: center;
+  color: var(--color-principal);
+
+  border: 1px solid var(--color-terciario);
+  margin-top: 10px;
+}
+
+button#copiador2 {
+  background-color: var(--color-terciario);
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 1em;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid var(--color-terciario);
+  margin-top: 10px;
+}
+
+.regalos-card h2 {
+  color: var(--color-principal);
+  padding: 0;
+}
+.regalos-card p {
+  color: var(--color-terciario);
+  padding: 4px 0;
+  font-size: 20px;
+}
+.final {
+  width: 100%;
+  height: 60vh;
+  /* background-color: var(--color-principal); */
+  background-image: url(./img/imagen\ final1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.final img {
+  width: 100%;
+}
+.end {
+  margin: 0 10em;
+  padding: 20px 0;
+  color: var(--color-terciario);  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 55vh;
+  margin: 0;
+}
+
+.letras_nombres {
+  font-family: "Pacifico", cursive;
+}
+
+.p_lucia {
+    font-size: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 0 50px;
+}
+
+.p_y {
+    font-size: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p_julian {
+    font-size: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.fecha_final{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-terciario); 
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  padding: 40px;
+}
+footer .contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  width: 60px;
+}
+
+footer .icono{
+    width: 15px;
+}
+.contenido ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.contenido a {
+  color: var(--color-principal);
+}
+.contenido a:hover {
+  color: var(--color-secundario);
+}
+
+@media (max-width: 990px) {
+  header .boxuno {
+    background-image: url(./img/tabletback1.png);
+    background-size: contain;
+  }
+  .info {
+    background-image: url(./img/imagen\ f1.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .end {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .p_lucia, .p_y, .p_julian {
+    font-size: 6em;
+    flex-direction: row;
+    color: #000000;
+    }
+  .lovestory-text_1{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .regalos {
+    background-image: url(./img/imagen\ final_3.png);
+    background-position: bottom;
+  }
+  .final{
+    background-image: url(img/imagen1.png);
+  }
+}
+
+@media (max-width: 768px) {
+  header .boxuno {
+    background-image: url(./img/tabletback1.png);
+    background-size: cover;
+  }
+  .lovestory {
+    grid-template-columns: 1fr;
+  }
+  .lovestory-img {
+    height: 50vh;
+  }
+  .info-cards {
+    flex-direction: column;
+  }
+  /* .info {
+    background-image: url(./nuevasGraficas/iPhoneback2.png);
+  } */
+  /* #muestra {
+    background-image: url(./nuevasGraficas/muestra.png);
+  }
+  .rsvp {
+    background-image: url(./nuevasGraficas/iPhoneBACK3png.png);
+  } */
+  .regalos {
+    background-image: url(./img/imagen\ final_3.png);
+    background-position: bottom;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .galeria img {
+    width: 50vw;
+  }
+}
