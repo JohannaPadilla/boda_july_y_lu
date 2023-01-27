@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --color-principal: black;
   --color-secundario: #c4f9ff;
@@ -9,7 +14,7 @@
 }
 
 body {
-  background-color: var(--color-principal);
+  background-color: #fff;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -23,38 +28,20 @@ body h2 {
   font-family: var(--font-principal);
   padding: 0;
 }
-
-header {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-header .boxuno {
+.boxuno {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url(./img/tabletback1.png);
+  background-image: url(../Image/fondos/portada.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
-.inicio {
-  text-align: center;
-  padding: 40px 0 40px 0;
+.inicio_anim {
   animation-name: texto;
   animation-duration: 5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 @keyframes texto {
   from {
@@ -64,20 +51,28 @@ header .boxuno {
     opacity: 1;
   }
 }
-.inicio img {
-  width: 80vw;
-  max-width: 500px;
-  padding: 0;
-}
+
 .inicio {
-    width: 100%;
-    height: 60vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-rows: 1fr auto;
-  }
+  margin: 0 10em;
+  padding: 20px 0;
+  color: var(--color-terciario);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 55vh;
+  margin: 0;
+}
+.p_nos-casamos {
+  font-size: 5em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nos_casamos {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--color-terciario);
+}
 .boton {
   border: 1px solid var(--color-terciario);
   background-color: var(--color-terciario);
@@ -132,19 +127,26 @@ header p {
 
 .lovestory {
   width: 100%;
-  height: auto;
-  background-color: var(--color-terciario);
+  height: 40vh;
   color: var(--color-principal);
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  background-color: var(--color-terciario);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+}
+.lovestory-1 {
+  width: 100%;
+  height: auto;
+  color: var(--color-principal);
+  background-color: var(--color-terciario);
+
 }
 .lovestory-text {
   padding: 20px 40px;
-  text-align: justify;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 }
 .lovestory-text_1 {
   padding: 20px 40px;
@@ -156,14 +158,25 @@ header p {
 
 .lovestory-img {
   width: 100%;
-  background-image: url(img/5.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.borde{
-    border-bottom: 5px dashed var(--color-secundario);
+.requerimientos {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3em;
+  color: darkolivegreen;
 }
+.p-req{
+  text-align: center;
+}
+.restricciones{
+  color: brown;
+}
+/* .borde {
+  border-bottom: 5px dashed var(--color-secundario);
+} */
 .galeria {
   width: 100%;
   display: grid;
@@ -174,10 +187,10 @@ header p {
 }
 .info {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   text-align: center;
   padding: 40px;
-  background-image: url(./img/imagen\ final_3.png);
+  background-image: url(../Image/fondos/final.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,7 +206,6 @@ header p {
 
 .animado {
   width: 340px;
-
   padding: 40px;
   border-radius: 25px;
 }
@@ -212,8 +224,14 @@ header p {
   padding: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 40px;
+}
+
+.cards-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .info-cards h2 {
@@ -225,7 +243,7 @@ header p {
   width: 100%;
   height: 50vh;
   background-color: var(--color-principal);
-  background-image: url(./img/imagen\ final5.png);
+  background-image: url(../Image/fondos/rsvp.png);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,9 +301,9 @@ header p {
 }
 .regalos {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   background-color: var(--color-principal);
-  background-image: url(./img/imagen\ final_1.png);
+  background-image: url(../Image/fondos/regalos.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -402,7 +420,7 @@ button#copiador2 {
   width: 100%;
   height: 60vh;
   /* background-color: var(--color-principal); */
-  background-image: url(./img/imagen\ final1.png);
+  background-image: url(../Image/fondos/final.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -415,7 +433,7 @@ button#copiador2 {
 .end {
   margin: 0 10em;
   padding: 20px 0;
-  color: var(--color-terciario);  
+  color: var(--color-terciario);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 55vh;
@@ -427,37 +445,37 @@ button#copiador2 {
 }
 
 .p_lucia {
-    font-size: 10em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 0 0 50px;
+  font-size: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 0 50px;
 }
 
 .p_y {
-    font-size: 10em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  font-size: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .p_julian {
-    font-size: 10em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
+  font-size: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
 }
 
-.fecha_final{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--color-terciario); 
+.fecha_final {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-terciario);
 }
 
 footer {
@@ -477,8 +495,8 @@ footer img {
   width: 60px;
 }
 
-footer .icono{
-    width: 15px;
+footer .icono {
+  width: 15px;
 }
 .contenido ul {
   display: flex;
@@ -495,43 +513,49 @@ footer .icono{
 
 @media (max-width: 990px) {
   header .boxuno {
-    background-image: url(./img/tabletback1.png);
-    background-size: contain;
+    background-image: url(../Image/fondos/portada.png);
   }
   .info {
-    background-image: url(./img/imagen\ f1.png);
+    background-image: url(../Image/fondos/info.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
   }
   .end {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
-  .p_lucia, .p_y, .p_julian {
+  .inicio {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .p_lucia,
+  .p_y,
+  .p_julian {
     font-size: 6em;
-    flex-direction: row;
-    color: #000000;
-    }
-  .lovestory-text_1{
+    flex-direction: column;
+  }
+  .lovestory-text_1 {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-  .regalos {
-    background-image: url(./img/imagen\ final_3.png);
-    background-position: bottom;
-  }
-  .final{
-    background-image: url(img/imagen1.png);
+  .final {
+    background-image: url(../Image/fondos/info.png);
   }
 }
 
 @media (max-width: 768px) {
   header .boxuno {
-    background-image: url(./img/tabletback1.png);
+    background-image: url(../Image/fondos/portada.png);
     background-size: cover;
+    text-align: center;
+  }
+  .info {
+    background-image: url(../Image/fondos/info2.png);
   }
   .lovestory {
     grid-template-columns: 1fr;
@@ -542,19 +566,10 @@ footer .icono{
   .info-cards {
     flex-direction: column;
   }
-  /* .info {
-    background-image: url(./nuevasGraficas/iPhoneback2.png);
-  } */
-  /* #muestra {
-    background-image: url(./nuevasGraficas/muestra.png);
-  }
-  .rsvp {
-    background-image: url(./nuevasGraficas/iPhoneBACK3png.png);
-  } */
-  .regalos {
+  /* .regalos {
     background-image: url(./img/imagen\ final_3.png);
     background-position: bottom;
-  }
+  } */
   .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
