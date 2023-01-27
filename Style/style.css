@@ -557,14 +557,23 @@ footer .icono {
   .info {
     background-image: url(../Image/fondos/info2.png);
   }
+  .p_nos-casamos {
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
   .lovestory {
     grid-template-columns: 1fr;
   }
-  .lovestory-img {
-    height: 50vh;
-  }
   .info-cards {
     flex-direction: column;
+    height: auto;
+  }
+  .requerimientos {
+    font-size: 2em;
   }
   /* .regalos {
     background-image: url(./img/imagen\ final_3.png);
