@@ -529,13 +529,13 @@ footer .icono {
 
   .inicio {
     grid-template-columns: none;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
   }
 
   .p_lucia,
   .p_y,
   .p_julian {
-    font-size: 6em;
+    font-size: 8em;
     flex-direction: column;
   }
   .lovestory-text_1 {
@@ -565,12 +565,19 @@ footer .icono {
     align-items: center;
     justify-content: flex-end;
   }
+  .p_lucia,
+  .p_y,
+  .p_julian {
+    font-size: 6em;
+    margin: 0;
+    justify-content: center;
+  }
   .lovestory {
     grid-template-columns: 1fr;
+    height: auto;
   }
   .info-cards {
     flex-direction: column;
-    height: auto;
   }
   .requerimientos {
     font-size: 2em;
