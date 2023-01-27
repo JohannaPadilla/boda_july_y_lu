@@ -582,10 +582,9 @@ footer .icono {
   .requerimientos {
     font-size: 2em;
   }
-  /* .regalos {
-    background-image: url(./img/imagen\ final_3.png);
-    background-position: bottom;
-  } */
+  .regalos {
+    height: auto;
+  }
   .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
